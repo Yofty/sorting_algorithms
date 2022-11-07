@@ -19,14 +19,15 @@ int len_list(listint_t *h)
 }
 
 /**
- * void insertion_sort_list - sort the list with insert sort algorism
+ * insertion_sort_list - sort the list with insert sort algorism
  * @list : the list to be sorted
  *
  * Return: nothing
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *curr = NULL, *one = NULL, *two = NULL, *three = NULL, *four = NULL;
+	listint_t *curr = NULL, *one = NULL, *two = NULL;
+	listint_t *three = NULL, *four = NULL;
 
 	if (!list || !(*list) || len_list(*list) < 2)
 		return;
