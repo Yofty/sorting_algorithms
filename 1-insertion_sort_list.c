@@ -33,7 +33,6 @@ void insertion_sort_list(listint_t **list)
 		return;
 
 	curr = *list;
-
 	while (curr)
 	{
 		if (curr->prev && curr->n < curr->prev->n)
@@ -48,6 +47,7 @@ void insertion_sort_list(listint_t **list)
 				four->prev = two;
 			three->next = two;
 			three->prev = one;
+
 			if(one)
 				one->next = three;
 			else
