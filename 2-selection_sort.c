@@ -10,6 +10,7 @@
 void selection_sort(int *array, size_t size)
 {
 	unsigned int x, y, min;
+
 	register int tmp;
 
 	if (size < 2)
