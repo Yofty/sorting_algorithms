@@ -16,7 +16,7 @@ void quick_sort(int *array, size_t size)
 
 /**
  * quick_recursion - helper function
- * @ array : the array to be sorted
+ * @array : the array to be sorted
  * @left : the index of the left element
  * @right :  the indx of the rioght element
  * @size : the size of the array
@@ -25,7 +25,8 @@ void quick_sort(int *array, size_t size)
 void quick_recursion(int *array, int left, int right, size_t size)
 {
 	int piv;
-	if(left < right)
+
+	if (left < right)
 	{
 		piv = partition(array, left, right, size);
 		quick_recursion(array, left, piv - 1, size);
